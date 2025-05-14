@@ -59,9 +59,12 @@ open class CollectionViewReusableViewComponent: Component, Statefull, Sizeable {
         return 0
     }
     
+    public convenience init() {
+        self.init(State(nil))
+    }
+    
     public override init(_ state: State) {
         super.init(state)
-        
         buildFlexNode()
     }
     

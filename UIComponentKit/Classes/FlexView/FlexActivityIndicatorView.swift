@@ -14,8 +14,8 @@ public class FlexActivityIndicatorView: FlexView {
     override public func view(from node: FlexNode) -> UIView {
         let indicator = UIActivityIndicatorView(style: style)
         indicator.startAnimating()
-        let width = max(20, frame.size.width)
-        let height = max(20, frame.size.height)
+        let width = max(10, frame.size.width)
+        let height = max(10, frame.size.height)
         let scaleX = width / max(indicator.bounds.width, 1)
         let scaleY = height / max(indicator.bounds.height, 1)
         indicator.transform = CGAffineTransform(scaleX: scaleX, y: scaleY)

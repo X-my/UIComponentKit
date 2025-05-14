@@ -29,6 +29,7 @@ public extension FlexNodeContainable {
             flexView.widthAnchor.constraint(equalToConstant: flexView.bounds.width),
             flexView.heightAnchor.constraint(equalToConstant: flexView.bounds.height)
         ])
+        flexViewContainer.frame.size = flexView.bounds.size
     }
 }
 
